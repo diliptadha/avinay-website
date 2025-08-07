@@ -9,12 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
+    "axios": "^1.11.0",
+    "lucide-react": "^0.537.0",
+    "next": "15.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.4.6"
+    "react-icons": "^5.5.0",
+    "react-swiper": "^0.1.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "prisma": "^6.13.0",
     "tailwindcss": "^4"
   }
 }
