@@ -346,7 +346,7 @@ const Shop = () => {
             >
               {/* Clickable Image */}
               <Link
-                to={`/shop/${createSlug(product.title)}`}
+                href={`/shop/${createSlug(product.title)}`}
                 className={`${
                   viewMode === "list"
                     ? "w-48 h-32 flex-shrink-0 mr-6"
