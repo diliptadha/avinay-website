@@ -50,8 +50,11 @@ const FAQAccordion = () => {
         {faqs.map((item, i) => (
           <div
             key={item.question}
-            className={`group relative transition-all duration-300 hover:bg-orange-50/70 ${active === i ? "bg-gradient-to-br from-orange-50 via-orange-100 to-white" : ""
-              }`}
+            className={`group relative transition-all duration-300 hover:bg-orange-50/70 ${
+              active === i
+                ? "bg-gradient-to-br from-orange-50 via-orange-100 to-white"
+                : ""
+            }`}
             onClick={() => setActive(i === active ? null : i)}
           >
             <div className="flex items-center justify-between px-6 py-5">
@@ -65,23 +68,24 @@ const FAQAccordion = () => {
                 {item.question}
               </span>
               <ChevronDown
-                className={`cursor-pointer w-6 h-6 text-[#8b2727] transition-transform duration-500 ${active === i ? "rotate-180" : ""
-                  }`}
+                className={`cursor-pointer w-6 h-6 text-[#8b2727] transition-transform duration-500 ${
+                  active === i ? "rotate-180" : ""
+                }`}
               />
             </div>
             <div
-              className={`overflow-hidden max-h-0 transition-all duration-500 ease-in-out ${active === i
+              className={`overflow-hidden max-h-0 transition-all duration-500 ease-in-out ${
+                active === i
                   ? "max-h-96 shadow-lg p-6 bg-gradient-to-tr from-orange-50 to-white/70"
                   : "max-h-0 p-0 shadow-none bg-none"
-                }`}
+              }`}
             >
-              <div className="text-gray-700 text-base">
-                {item.answer}
-              </div>
+              <div className="text-gray-700 text-base">{item.answer}</div>
             </div>
             <div
-              className={`absolute left-0 bottom-0 w-full border-b-2 border-dashed border-orange-100 transition-all ${active === i ? "opacity-0 scale-x-75" : "opacity-100"
-                }`}
+              className={`absolute left-0 bottom-0 w-full border-b-2 border-dashed border-orange-100 transition-all ${
+                active === i ? "opacity-0 scale-x-75" : "opacity-100"
+              }`}
               style={{ transformOrigin: "left" }}
             />
           </div>
