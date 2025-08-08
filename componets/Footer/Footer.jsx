@@ -55,7 +55,7 @@ function Footer() {
               <div className="">
                 <Link href={"/"} className="inline-block">
                   <Image
-                    className="h-25 w-35 object-contain"
+                    className="h-auto w-auto object-contain"
                     src={"/assets/images/text-logo.png"}
                     alt="Avinya Electricals"
                     width={100} // Set the appropriate width
