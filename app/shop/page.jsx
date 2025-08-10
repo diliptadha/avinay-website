@@ -13,6 +13,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import Link from "next/link";
+import { getProducts } from "@/actions/fetchProduct";
 // import { useCart } from "../context/CartContext";
 
 const Shop = () => {
@@ -40,6 +41,10 @@ const Shop = () => {
   // };
 
   useEffect(() => {
+    getProducts().then((products) => {
+      console.log("Fetched products:", products);
+    });
+
     fetch("https://dummyjson.com/products?limit=100")
       .then((response) => response.json())
       .then((data) => {

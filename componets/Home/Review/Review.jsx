@@ -1,6 +1,6 @@
-'use client';
-import React, { useState, useEffect } from 'react';
-import Title from '../../SectionTitles/Title';
+"use client";
+import React, { useState, useEffect } from "react";
+import Title from "../../SectionTitles/Title";
 
 const Review = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -8,84 +8,92 @@ const Review = () => {
 
   const testimonials = [
     {
-      "id": 1,
-      "name": "Vishal Bhatt",
-      "role": "Industrial Project Consultant",
-      "location": "Vapi",
-      "rating": 5,
-      "review": "As a consultant, I work with many vendors, but Avinya Electricals stands out for their technical clarity and professional approach. Their efficient handling from inquiry to delivery adds real value to my projects",
-      "avatar": "VB",
-      "gradient": "from-indigo-500 to-blue-600"
+      id: 1,
+      name: "Vishal Bhatt",
+      role: "Industrial Project Consultant",
+      location: "Vapi",
+      rating: 5,
+      review:
+        "As a consultant, I work with many vendors, but Avinya Electricals stands out for their technical clarity and professional approach. Their efficient handling from inquiry to delivery adds real value to my projects",
+      avatar: "VB",
+      gradient: "from-indigo-500 to-blue-600",
     },
     {
-      "id": 2,
-      "name": "Mehul Shah",
-      "role": "Workshop Owner",
-      "location": "Surat",
-      "rating": 5,
-      "review": "Running a workshop means I need quick access to reliable products. Avinya Electricals delivers just that—genuine items, fair prices, and a team that’s always ready with technical suggestions",
-      "avatar": "MS",
-      "gradient": "from-teal-500 to-cyan-500"
+      id: 2,
+      name: "Mehul Shah",
+      role: "Business Owner",
+      location: "Surat",
+      rating: 5,
+      review:
+        "Running a workshop means I need quick access to reliable products. Avinya Electricals delivers just that—genuine items, fair prices, and a team that’s always ready with technical suggestions",
+      avatar: "MS",
+      gradient: "from-teal-500 to-cyan-500",
     },
     {
-      "id": 3,
-      "name": "Kiran Desai",
-      "role": "Maintenance Engineer",
-      "location": "Pune",
-      "rating": 4,
-      "review": "Avinya Electricals is usually my first call when I need quality components. While there have been a few stock delays, their support and product quality remain consistently reliable for maintenance needs",
-      "avatar": "KD",
-      "gradient": "from-emerald-500 to-green-600"
+      id: 3,
+      name: "Kiran Desai",
+      role: "Maintenance Engineer",
+      location: "Pune",
+      rating: 4,
+      review:
+        "Avinya Electricals is usually my first call when I need quality components. While there have been a few stock delays, their support and product quality remain consistently reliable for maintenance needs",
+      avatar: "KD",
+      gradient: "from-emerald-500 to-green-600",
     },
     {
-      "id": 4,
-      "name": "Nilesh Joshi",
-      "role": "Production Manager",
-      "location": "Bengaluru",
-      "rating": 4,
-      "review": "We regularly source from Avinya due to their professionalism and quality products. Occasionally, documentation or billing takes longer than expected, but overall they’re a solid and trusted vendor",
-      "avatar": "NJ",
-      "gradient": "from-purple-600 to-violet-600"
+      id: 4,
+      name: "Nilesh Joshi",
+      role: "Production Manager",
+      location: "Bengaluru",
+      rating: 4,
+      review:
+        "We regularly source from Avinya due to their professionalism and quality products. Occasionally, documentation or billing takes longer than expected, but overall they’re a solid and trusted vendor",
+      avatar: "NJ",
+      gradient: "from-purple-600 to-violet-600",
     },
     {
-      "id": 5,
-      "name": "Hardik Trivedi",
-      "role": "Purchase Officer",
-      "location": "Ahmedabad",
-      "rating": 5,
-      "review": "From a procurement perspective, Avinya Electricals offers a competitive product range and fair pricing. Most orders are processed smoothly, but during high-demand periods, updates can be slower than expected. Still, they’re a reliable vendor for our recurring needs",
-      "avatar": "HT",
-      "gradient": "from-rose-500 to-pink-500"
+      id: 5,
+      name: "Hardik Trivedi",
+      role: "Purchase Officer",
+      location: "Ahmedabad",
+      rating: 5,
+      review:
+        "From a procurement perspective, Avinya Electricals offers a competitive product range and fair pricing. Most orders are processed smoothly, but during high-demand periods, updates can be slower than expected. Still, they’re a reliable vendor for our recurring needs",
+      avatar: "HT",
+      gradient: "from-rose-500 to-pink-500",
     },
     {
-      "id": 6,
-      "name": "Jignesh Chauhan",
-      "role": "Plant Incharge",
-      "location": "Anklesvar",
-      "rating": 5,
-      "review": "Managing a plant requires timely deliveries and consistent communication. Avinya Electricals provides good-quality industrial products, but there have been instances where delivery timelines slipped. With improved coordination, they can become a top-tier supplier for plant operations",
-      "avatar": "JC",
-      "gradient": "from-red-500 to-orange-500"
+      id: 6,
+      name: "Jignesh Chauhan",
+      role: "Plant Incharge",
+      location: "Ankleshwar",
+      rating: 5,
+      review:
+        "Managing a plant requires timely deliveries and consistent communication. Avinya Electricals provides good-quality industrial products, but there have been instances where delivery timelines slipped. With improved coordination, they can become a top-tier supplier for plant operations",
+      avatar: "JC",
+      gradient: "from-red-500 to-orange-500",
     },
     {
-      "id": 7,
-      "name": "Dipak Parmar",
-      "role": "Electrical Contractor",
-      "location": "Silvassa",
-      "rating": 4,
-      "review": "Avinya Electricals is a dependable source for industrial materials. Their pricing is fair, and most products are readily available. For specialized jobs, I’d appreciate quicker technical assistance, but overall they’re a solid partner for day-to-day contracting needs",
-      "avatar": "DP",
-      "gradient": "from-blue-500 to-sky-500"
+      id: 7,
+      name: "Dipak Parmar",
+      role: "Electrical Contractor",
+      location: "Silvassa",
+      rating: 4,
+      review:
+        "Avinya Electricals is a dependable source for industrial materials. Their pricing is fair, and most products are readily available. For specialized jobs, I’d appreciate quicker technical assistance, but overall they’re a solid partner for day-to-day contracting needs",
+      avatar: "DP",
+      gradient: "from-blue-500 to-sky-500",
     },
     {
-      "id": 8,
-      "name": "Rahul Patel",
-      "role": "Factory Supervisor",
-      "location": "Vadodara",
-      "rating": 3,
-      "review": "Avinya offers good value for money. But in urgent procurement scenarios, their team needs to respond faster. Better coordination would make them an even better vendor",
-      "avatar": "RP",
-      "gradient": "from-orange-500 to-yellow-500"
+      id: 8,
+      name: "Rahul Patel",
+      role: "Factory Supervisor",
+      location: "Vadodara",
+      rating: 3,
+      review:
+        "Avinya offers good value for money. But in urgent procurement scenarios, their team needs to respond faster. Better coordination would make them an even better vendor",
+      avatar: "RP",
+      gradient: "from-orange-500 to-yellow-500",
     },
   ];
 
@@ -97,7 +105,7 @@ const Review = () => {
     if (isAutoPlaying) {
       interval = setInterval(() => {
         setCurrentSlide((prev) => (prev + 1) % totalSlides);
-      }, 4000);
+      }, 6000);
     }
     return () => clearInterval(interval);
   }, [isAutoPlaying, totalSlides]);
@@ -122,7 +130,9 @@ const Review = () => {
       {[...Array(5)].map((_, i) => (
         <svg
           key={i}
-          className={`w-4 h-4 sm:w-5 sm:h-5 ${i < rating ? 'text-yellow-400' : 'text-gray-300'}`}
+          className={`w-4 h-4 sm:w-5 sm:h-5 ${
+            i < rating ? "text-yellow-400" : "text-gray-300"
+          }`}
           fill="currentColor"
           viewBox="0 0 20 20"
         >
@@ -137,9 +147,24 @@ const Review = () => {
 
   const LocationBadge = ({ location }) => (
     <div className="inline-flex items-center gap-1 px-3 py-1 sm:px-4 sm:py-1.5 bg-[#8b2727] text-white rounded-full text-xs sm:text-sm font-medium">
-      <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+      <svg
+        className="w-3 h-3 sm:w-4 sm:h-4"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+        />
       </svg>
       {location}
     </div>
@@ -152,12 +177,14 @@ const Review = () => {
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-[#8b2727] rounded-full mb-4 sm:mb-6">
             <div className="w-2 h-2 bg-[#d2af6f] rounded-full animate-pulse"></div>
-            <span className="text-xs sm:text-sm font-medium text-[#fff]">Customer Reviews</span>
+            <span className="text-xs sm:text-sm font-medium text-[#fff]">
+              Customer Reviews
+            </span>
           </div>
 
           <Title
             title="What Our Customers Say"
-            subtitle="Trusted by industries across Vapi and Silvassa for quality electrical products and exceptional service"
+            subtitle="Trusted by industries across world for quality electrical products and exceptional service"
           />
         </div>
 
@@ -168,7 +195,9 @@ const Review = () => {
             <div className="h-1 bg-gray-200">
               <div
                 className="h-full bg-[#8b2727] transition-all duration-300"
-                style={{ width: `${((currentSlide + 1) / totalSlides) * 100}%` }}
+                style={{
+                  width: `${((currentSlide + 1) / totalSlides) * 100}%`,
+                }}
               />
             </div>
 
@@ -187,7 +216,9 @@ const Review = () => {
                       <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6 lg:gap-8">
                         {/* Avatar */}
                         <div className="flex-shrink-0">
-                          <div className={`w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br ${testimonial.gradient} rounded-full flex items-center justify-center text-white text-lg sm:text-xl font-bold shadow-lg`}>
+                          <div
+                            className={`w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br ${testimonial.gradient} rounded-full flex items-center justify-center text-white text-lg sm:text-xl font-bold shadow-lg`}
+                          >
                             {testimonial.avatar}
                           </div>
                         </div>
@@ -229,8 +260,18 @@ const Review = () => {
                   onClick={previousSlide}
                   className="w-8 h-8 sm:w-10 sm:h-10 bg-white border border-gray-300 rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-50 hover:border-gray-400 transition-colors"
                 >
-                  <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  <svg
+                    className="w-4 h-4 sm:w-5 sm:h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 19l-7-7 7-7"
+                    />
                   </svg>
                 </button>
 
@@ -242,10 +283,11 @@ const Review = () => {
                       <button
                         key={index}
                         onClick={() => goToSlide(index)}
-                        className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-all duration-300 ${index === currentSlide
-                            ? 'bg-[#8b2727] w-4 sm:w-6'
-                            : 'bg-gray-300 hover:bg-gray-400'
-                          }`}
+                        className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full transition-all duration-300 ${
+                          index === currentSlide
+                            ? "bg-[#8b2727] w-4 sm:w-6"
+                            : "bg-gray-300 hover:bg-gray-400"
+                        }`}
                       />
                     ))}
                   </div>
@@ -258,17 +300,26 @@ const Review = () => {
                   {/* Auto-play Toggle */}
                   <button
                     onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-                    className={`p-1.5 sm:p-2 rounded-full transition-colors ${isAutoPlaying
-                        ? 'bg-[#d2af6f] text-black'
-                        : 'bg-[#8b2727] text-white hover:bg-[#d2af6f]'
-                      }`}
+                    className={`p-1.5 sm:p-2 rounded-full transition-colors ${
+                      isAutoPlaying
+                        ? "bg-[#d2af6f] text-black"
+                        : "bg-[#8b2727] text-white hover:bg-[#d2af6f]"
+                    }`}
                   >
                     {isAutoPlaying ? (
-                      <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <svg
+                        className="w-3 h-3 sm:w-4 sm:h-4"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
                         <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
                       </svg>
                     ) : (
-                      <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <svg
+                        className="w-3 h-3 sm:w-4 sm:h-4"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
                         <path d="M8 5v14l11-7z" />
                       </svg>
                     )}
@@ -280,8 +331,18 @@ const Review = () => {
                   onClick={nextSlide}
                   className="w-8 h-8 sm:w-10 sm:h-10 bg-white border border-gray-300 rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-50 hover:border-gray-400 transition-colors"
                 >
-                  <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <svg
+                    className="w-4 h-4 sm:w-5 sm:h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </button>
               </div>
@@ -292,16 +353,18 @@ const Review = () => {
         {/* Stats Section */}
         <div className="mt-8 sm:mt-12 lg:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
           {[
-            { number: '50+', label: 'Happy Customers', icon: '😊' },
-            { number: '85%', label: 'Satisfaction Rate', icon: '⭐' },
-            { number: '2', label: 'Branch Locations', icon: '📍' },
-            { number: '24/7', label: 'Customer Support', icon: '🛟' },
+            { number: "50+", label: "Happy Customers", icon: "😊" },
+            { number: "85%", label: "Satisfaction Rate", icon: "⭐" },
+            { number: "2", label: "Branch Locations", icon: "📍" },
+            { number: "24/7", label: "Customer Support", icon: "🛟" },
           ].map((stat, index) => (
             <div
               key={index}
               className="text-center p-4 sm:p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className="text-2xl sm:text-3xl mb-1 sm:mb-2">{stat.icon}</div>
+              <div className="text-2xl sm:text-3xl mb-1 sm:mb-2">
+                {stat.icon}
+              </div>
               <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-1">
                 {stat.number}
               </div>
